@@ -1,3 +1,9 @@
+
+/* Backend Assignment for REUNION
+   Author: Jugal Lad */
+
+
+
 //dependencies
 require("dotenv").config();
 const express = require("express");
