@@ -34,6 +34,10 @@ app.use('/api/posts', postsRouter)
 app.use('/api/comment', commentsRouter)
 app.use('/api/users', usersRouter)
 
+app.get('/', (req,res) => {
+  res.send('hello')
+})
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
