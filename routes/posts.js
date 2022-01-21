@@ -6,7 +6,6 @@ const authenticateToken = require("../middleware/authCheck");
 const postsRouter = express.Router();
 
 //ADD A NEW POST BY AUTHENTICATED USER
-
 postsRouter.post("/", authenticateToken, async (req, res) => {
   try {
     let currentUser = null;
@@ -111,6 +110,27 @@ postsRouter.get("/all_posts/:id", authenticateToken, async (req, res) => {
     const requestedPosts = await pool.query(
       "SELECT * FROM posts WHERE userid = $1",
       [userId]
+    );
+
+    if (requestedPosts.rows != null) {
+      res.status(200).json(requestedPosts.rows);
+    } else {
+      res.status(400).json({
+        message: "no posts available!",
+      });
+    }
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
+//GET ALL POSTS
+
+postsRouter.get("/", authenticateToken, async (req, res) => {
+  try {
+    
+    const requestedPosts = await pool.query(
+      "SELECT * FROM posts"
     );
 
     if (requestedPosts.rows != null) {
