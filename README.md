@@ -119,6 +119,13 @@ CREATE TABLE likes(
 [![Screenshot-2022-05-07-151320.png](https://i.postimg.cc/PfvVD6K7/Screenshot-2022-05-07-151320.png)](https://postimg.cc/BtsC9Br5)
 
 
+## Technologies used  
+The following tehcnologies were used to build this project
+
+ - NodeJS
+ - Express
+ - PostgreSQL
+
 ## API Endpoints 
 [deployment link](https://immense-tundra-83823.herokuapp.com/)
 
