@@ -70,7 +70,7 @@ The database schema has been designed and implemented in PostgreSQL.
 
 ## Database Schema - Code
 
-```
+```sql
 CREATE TABLE users(
 userid NUMERIC PRIMARY KEY,
 username VARCHAR(255) NOT NULL UNIQUE,
