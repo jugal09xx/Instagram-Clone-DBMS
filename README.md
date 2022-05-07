@@ -1,10 +1,9 @@
-# 18CSE303J Database Management Systems Semester Project 
-
-https://immense-tundra-83823.herokuapp.com/
+# 18CSE303J Database Management System 
+## Semester Project 
 
 ## Problem Statement
 
-To build an API for a social media platform in NodeJs. The API should support features like: 
+The task is to build an API for a social media platform based on NodeJs. The tech-stack for the project is NodeJS, Express and PostgreSQL. This backend project is based on the working of social media sites like Facebook and Instagram which allows users to perform CRUD operations like posting pictures/videos, posting comments, following other users and liking their posts. The API supports operations like: 
 
 - fetch a user profile 
 - follow a user
@@ -17,9 +16,17 @@ To build an API for a social media platform in NodeJs. The API should support fe
 - edit a comment
 - delete comment on a post 
 
-Design the database schema and implement in PostgreSQL.
+The database schema has been designed and implemented in PostgreSQL.
 
-## ER Diagram
+## Database Schema - Tables
+
+| user id  | user name | password | followers |
+| ------------- | ------------- | ----------- | ----------- | 
+| 1101  | jugal.lad  | hello123  | 560 |
+| 1102  | harsh.pala  | welcome@345  | 470 |
+
+
+## Database Schema - ER Diagram
 
 [![Screenshot-2022-05-07-151320.png](https://i.postimg.cc/PfvVD6K7/Screenshot-2022-05-07-151320.png)](https://postimg.cc/BtsC9Br5)
 
