@@ -70,7 +70,7 @@ The database schema has been designed and implemented in PostgreSQL.
 
 ## Database Schema - Code
 
-''''
+```
 CREATE TABLE users(
 userid NUMERIC PRIMARY KEY,
 username VARCHAR(255) NOT NULL UNIQUE,
@@ -109,7 +109,7 @@ CREATE TABLE likes(
   FOREIGN KEY (userid) REFERENCES users(userid),
   FOREIGN KEY (postid) REFERENCES posts(postid)
 );
-''''
+```
 
 
 ## Database Schema - ER Diagram
