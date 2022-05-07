@@ -1,11 +1,28 @@
-# social-media-API-REUNION-TASK
+# 18CSE303J Database Management Systems Semester Project 
+
 https://immense-tundra-83823.herokuapp.com/
 
 ## Problem Statement
 
-Build APIs for a social media platform in either NodeJS or Python. The API should support features like getting a user profile, follow a user, upload a post, delete a post, like a post, unlike a liked post, and comment on a post. Design the database schema and implement in PostgreSQL.
+To build an API for a social media platform in NodeJs. The API should support features like: 
 
-- Note: Please authenticate using email: test_user@gmail.com, password: test_user
+- fetch a user profile 
+- follow a user
+- create a post 
+- delete a post
+- edit a post 
+- like a post 
+- unlike a post
+- comment on a post
+- edit a comment
+- delete comment on a post 
+
+Design the database schema and implement in PostgreSQL.
+
+## ER Diagram
+
+[![Screenshot-2022-05-07-151320.png](https://i.postimg.cc/PfvVD6K7/Screenshot-2022-05-07-151320.png)](https://postimg.cc/BtsC9Br5)
+
 
 ## API Endpoints
 

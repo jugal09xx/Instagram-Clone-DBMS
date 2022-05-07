@@ -37,9 +37,4 @@ CREATE TABLE likes(
   FOREIGN KEY (postid) REFERENCES posts(postid)
 )
 
-INSERT INTO users VALUES(1101, 'jugal.lad', '1234hello', 150);
-INSERT INTO users VALUES(1101, 'harsh.pala', 'abcdef', 130);
-INSERT INTO users VALUES(1101, 'devendra.bansal', 'xyzpqr', 110);
-INSERT INTO users VALUES(1101, 'rachit.agarwal', 'helloworld123', 190);
-INSERT INTO users VALUES(1101, 'tanmay.arora', 'welcome@345', 250);
 
