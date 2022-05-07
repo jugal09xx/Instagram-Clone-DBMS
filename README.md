@@ -1,9 +1,11 @@
 # 18CSE303J Database Management System 
-## Semester Project 
+## Semester Project - InstagramClone API
 
 ## Problem Statement
 
-The task is to build an API for a social media platform based on NodeJs. The tech-stack for the project is NodeJS, Express and PostgreSQL. This backend project is based on the working of social media sites like Facebook and Instagram which allows users to perform CRUD operations like posting pictures/videos, posting comments, following other users and liking their posts. The API supports operations like: 
+Here is the [deployment link](https://immense-tundra-83823.herokuapp.com/).
+
+The task is to build an API for a social media platform based on NodeJs. The tech-stack for the project is *NodeJS, Express and PostgreSQL*. This backend project is based on the working of social media apps like Facebook and Instagram which allow users to perform *CRUD operations* like posting pictures/videos, comments, following other users and liking their posts. The API supports operations like: 
 
 - fetch a user profile 
 - follow a user
@@ -16,7 +18,7 @@ The task is to build an API for a social media platform based on NodeJs. The tec
 - edit a comment
 - delete comment on a post 
 
-The database schema has been designed and implemented in PostgreSQL.
+The database schema has been designed and implemented in *PostgreSQL*.
 
 ## Database Schema - Tables
 
@@ -153,4 +155,5 @@ CREATE TABLE likes(
         - comments: Array of comments, for the particular post
         - likes: Number of likes for the particular post
 
-Created by Jugal Lad (11/01/2021) 
+Created by Jugal Lad (11/01/2022) 
+Updated on (07/05/2022)
