@@ -20,10 +20,42 @@ The database schema has been designed and implemented in PostgreSQL.
 
 ## Database Schema - Tables
 
+### Users 
+
 | user id  | user name | password | followers |
 | ------------- | ------------- | ----------- | ----------- | 
-| 1101  | jugal.lad  | hello123  | 560 |
-| 1102  | harsh.pala  | welcome@345  | 470 |
+| 1101  | jugal.lad  | fda485dja  | 560 |
+| 1102  | harsh.pala  | lkx234jk  | 470 |
+| 1103  | devendra.bansal  | dsf832xd  | 809 |
+| 1104  | arora  |  pwq421kq | 323 |
+
+### follow 
+
+| user id  | fname |
+| ------------- | ------------- | 
+| 1101  | devendra.bansal |
+| 1101  | harsh.pala |
+| 1103  | jugal.lad |
+| 1103  | tanmay.arora |
+| 1103  | harsh.pala |
+
+### Comments
+
+| user id  | postid | content | date |
+| ------------- | ------------- | ----------- | ----------- | 
+| 1101  | p101  | great picture!  | 13-04-2021 |
+| 1101  | p102  | nice smile  | 12-04-2021 |
+| 1102  | p102  | beautiful!!  | 11-04-2021 |
+| 1103  | p103  |  i love this picture! | 11-04-2021 |
+
+### likes
+
+| user id  | postid | isLiked |
+| ------------- | ------------- | ----------- |
+| 1101  | p101  | `true` |
+| 1101  | p102  | `true` |
+| 1102  | p102  | `true` |
+| 1103  | p103  | `true` |
 
 
 ## Database Schema - ER Diagram
