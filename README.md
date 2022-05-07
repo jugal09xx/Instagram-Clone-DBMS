@@ -29,7 +29,7 @@ The database schema has been designed and implemented in PostgreSQL.
 | 1103  | devendra.bansal  | dsf832xd  | 809 |
 | 1104  | arora  |  pwq421kq | 323 |
 
-### follow 
+### Follow 
 
 | user id  | fname |
 | ------------- | ------------- | 
@@ -38,6 +38,16 @@ The database schema has been designed and implemented in PostgreSQL.
 | 1103  | jugal.lad |
 | 1103  | tanmay.arora |
 | 1103  | harsh.pala |
+
+### Posts
+
+| user id  | postid | title | date |
+| ------------- | ------------- | ----------- | ----------- | 
+| 1101  | p103  | Vacation pics  | 13-04-2021 |
+| 1101  | p101  | Weekend Trip  | 12-04-2021 |
+| 1102  | p104  | Happy Birthday!  | 11-04-2021 |
+| 1103  | p106  | Summer Camp | 11-04-2021 |
+
 
 ### Comments
 
@@ -48,7 +58,7 @@ The database schema has been designed and implemented in PostgreSQL.
 | 1102  | p102  | beautiful!!  | 11-04-2021 |
 | 1103  | p103  |  i love this picture! | 11-04-2021 |
 
-### likes
+### Likes
 
 | user id  | postid | isLiked |
 | ------------- | ------------- | ----------- |
@@ -56,6 +66,50 @@ The database schema has been designed and implemented in PostgreSQL.
 | 1101  | p102  | `true` |
 | 1102  | p102  | `true` |
 | 1103  | p103  | `true` |
+
+
+## Database Schema - Code
+
+''''
+CREATE TABLE users(
+userid NUMERIC PRIMARY KEY,
+username VARCHAR(255) NOT NULL UNIQUE,
+pass VARCHAR(255) NOT NULL,
+no_of_followers NUMERIC DEFAULT 0
+);
+
+CREATE TABLE follow(
+userid NUMERIC,
+fname VARCHAR(255),
+FOREIGN KEY (userid) REFERENCES users(userid),
+FOREIGN KEY (fname) REFERENCES users(username)
+);
+
+CREATE TABLE posts(
+userid NUMERIC,
+postid NUMERIC PRIMARY KEY,
+title VARCHAR(255),
+des TEXT,
+FOREIGN KEY (userid) REFERENCES users(userid)
+);
+
+CREATE TABLE comments(
+  userid NUMERIc,
+  postid NUMERIC,
+  content TEXT,
+  comment_date DATE,
+  FOREIGN KEY (userid) REFERENCES users(userid),
+  FOREIGN KEY (postid) REFERENCES posts(postid)
+);
+
+CREATE TABLE likes(
+  userid NUMERIc,
+  postid NUMERIC,
+  isLiked BOOLEAN,
+  FOREIGN KEY (userid) REFERENCES users(userid),
+  FOREIGN KEY (postid) REFERENCES posts(postid)
+);
+''''
 
 
 ## Database Schema - ER Diagram
